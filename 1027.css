@@ -1,5 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;border:5px solid antiquewhite;
+    list-style: none;
+    box-sizing: border-box;
 }
+
+img {
+    height: 400px;
+    width: 600px;
+}
+
+.img-start {
+    border: 5px solid red;
+}
+
+#img-master {
+    border: 5px dashed palegreen;
+}
+.relative{
+    margin-left: 30px;
+    background: aqua;
+    width: 500px;
+    height: 500px;
+}
+.absolute{
+    background: black;
+    width: 100px;
+    height: 100px}
