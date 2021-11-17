@@ -1,29 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
+.flip-card-inner{
+    position: relative;
+}
+.flip-card-front,
+.flip-card-back{
+    position: absolute;
 }
 
-img {
-    height: 400px;
-    width: 600px;
+.flip-card-front,
+.flip-card-back,
+.flip-card-inner{
+    width: 100%;
+    height: 100%;
 }
 
-.img-start {
-    border: 5px solid red;
+.flip-card{
+ width: 300px;
+ height: 300px;
 }
 
-#img-master {
-    border: 5px dashed palegreen;
+.flip-card-front{
+    background-color: aquamarine;
+    color: antiquewhite;
 }
-.relative{
-    margin-left: 30px;
-    background: aqua;
-    width: 500px;
-    height: 500px;
+
+.flip-card-back{
+    background-color: aqua;
+    transform: rotateY(180deg);
+    color: antiquewhite;
 }
-.absolute{
-    background: black;
-    width: 100px;
-    height: 100px}
+
+.flip-card-inner:hover{
+    transform:rotateY(180deg);
+}
+
+.flip-card-inner{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
